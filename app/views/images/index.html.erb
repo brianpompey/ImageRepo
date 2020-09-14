@@ -2,22 +2,40 @@
 <html>
 <head>
 <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
 
 </style>
 </head>
 <body>
-<% if current_user %>
-    <ul>
-        <li><%= link_to "New Image", new_image_path %></li>
-        <li><%= link_to "LogOut", destroy_user_session_path %></li>
-    </ul>
-<% else %>
-  <ul>
-      <li><%= link_to "LogIn", new_user_session_path %></li>
-      <li><%= link_to "SignUp", new_user_registration_path %></li>
-  </ul>
-<% end %>
+
 <h1>Images</h1>
+
+<% if current_user %>
+    <%= "Hello #{current_user.name} "%>
+<% end %>
 
 </body>
 </html>
