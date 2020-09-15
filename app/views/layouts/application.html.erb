@@ -44,6 +44,7 @@ li a:hover {
     <ul>
         <li><%= link_to "New Image", new_image_path %></li>
         <li><%= link_to "LogOut", destroy_user_session_path, :method => :delete %></li>
+        <li><%= link_to "Home Page", images_path %></li>
     </ul>
     <% else %>
   <ul>

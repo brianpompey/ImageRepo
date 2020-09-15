@@ -18,12 +18,14 @@ class ImagesController < ApplicationController
     end
 
     def show
+    #    byebug
         @image = Image.find(params[:id])
     end
 
     def destroy
-        @resume = Resume.find(params[:id])
-        @resume.destroy
+        @image = Image.find(params[:id])
+        @image.destroy
+        redirect_to root_path
     end
 
     private

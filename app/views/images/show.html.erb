@@ -3,6 +3,6 @@
 <%= image_tag(@image.attachment_url, alt: 'Image')  %>
 
 
-<% if current_user == @image.user_id %>
+<% if current_user.id == @image.user_id %>
     <%= button_to "Delete",  @image, method: :delete%>
 <% end %>
