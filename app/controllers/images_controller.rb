@@ -22,7 +22,8 @@ class ImagesController < ApplicationController
     end
 
     def destroy
-        
+        @resume = Resume.find(params[:id])
+        @resume.destroy
     end
 
     private

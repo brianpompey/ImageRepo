@@ -1,25 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # ImageRepo
+
+Welcome to my ImageRepo! This poject was built with Ruby on Rails using the Devise gem for user authentication purposes.
+
+I spent a lot of time with Ruby at Flatiron School, but never got the chance to use Devise so this was a great introductory
+opportunity to dig in and give it a try.
+
+I believe with more time the project would definitely function (and look) much better but for application challenge purposes, this is my submission.
+
+Users may signin/signup and add or delete images. Refer to the seeds file for user signin data.
