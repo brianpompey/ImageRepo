@@ -2,7 +2,8 @@
 <h3><%= @image.user.name%>'s <%= @image.name%><h3><br>
 <%= image_tag(@image.attachment_url, alt: 'Image')  %>
 
-
-<% if current_user.id == @image.user_id %>
-    <%= button_to "Delete",  @image, method: :delete%>
+<% if current_user %>
+    <% if current_user.id == @image.user_id %>
+        <%= button_to "Delete",  @image, method: :delete%>
+    <% end %>
 <% end %>
